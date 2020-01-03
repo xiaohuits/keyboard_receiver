@@ -10,12 +10,13 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED COMPONENTS
     std_msgs
     roscpp
+    roslib
 )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-set( OpenCV_DIR /home/macs/OpenCV/build )
-find_package(OpenCV 3.4.1 REQUIRED)
+#set( OpenCV_DIR /home/macs/OpenCV/build )
+find_package(OpenCV REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
